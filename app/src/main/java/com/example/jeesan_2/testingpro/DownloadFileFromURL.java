@@ -65,19 +65,15 @@ public class DownloadFileFromURL extends AppCompatActivity {
 //        downloadTask.execute(image_url);
 
         // Method 2 :
-        if (PermissionCheck.readAndWriteExternalStorage(DownloadFileFromURL.this))
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (PermissionCheck.readAndWriteExternalStorage(DownloadFileFromURL.this))
+                downlaodViaDownloadManager();
+        } else
             downlaodViaDownloadManager();
 
 
     }
 
-    public static boolean isDownloadManagerAvailable(Context context) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
-            return true;
-        }
-        return false;
-    }
 
     private void downlaodViaDownloadManager() {
         String url = image_url;
@@ -90,24 +86,6 @@ public class DownloadFileFromURL extends AppCompatActivity {
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename);
         DownloadManager manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
         manager.enqueue(request);
-    }
-
-    public boolean haveStoragePermission() {
-        if (Build.VERSION.SDK_INT >= 23) {
-            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED) {
-                Log.e("Permission error", "You have permission");
-                return true;
-            } else {
-
-                Log.e("Permission error", "You have asked for permission");
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-                return false;
-            }
-        } else { //you dont need to worry about these stuff below api level 23
-            Log.e("Permission error", "You already have the permission");
-            return true;
-        }
     }
 
     @Override
