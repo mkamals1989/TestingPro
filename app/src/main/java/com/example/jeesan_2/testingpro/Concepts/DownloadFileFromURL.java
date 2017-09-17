@@ -1,6 +1,5 @@
-package com.example.jeesan_2.testingpro;
+package com.example.jeesan_2.testingpro.Concepts;
 
-import android.Manifest;
 import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -9,18 +8,16 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
-import android.os.Handler;
-import android.os.Message;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.webkit.MimeTypeMap;
 import android.webkit.URLUtil;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jeesan_2.testingpro.AsyncTask.DownloadTask;
 import com.example.jeesan_2.testingpro.CustomUtility.PermissionCheck;
+import com.example.jeesan_2.testingpro.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,9 +28,9 @@ public class DownloadFileFromURL extends AppCompatActivity {
     @BindView(R.id.tv)
     TextView tv;
 
-    ProgressDialog mProgressDialog;
-    DownloadTask downloadTask;
-    String image_url = "https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg";
+    public ProgressDialog mProgressDialog;
+    public DownloadTask downloadTask;
+    private String image_url = "https://upload.wikimedia.org/wikipedia/commons/b/b4/JPEG_example_JPG_RIP_100.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

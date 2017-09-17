@@ -61,5 +61,15 @@ public class PermissionCheck {
 
     }
 
+    public static boolean location(Context context) {
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions((Activity) context, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 6);
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+
     //Just like this you can implement rest of the permissions.
 }
