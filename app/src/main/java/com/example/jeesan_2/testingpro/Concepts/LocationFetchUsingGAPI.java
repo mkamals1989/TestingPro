@@ -189,6 +189,7 @@ public class LocationFetchUsingGAPI extends AppCompatActivity implements GoogleA
     @Override
     public void onConnectionSuspended(int i) {
         Log.w(TAG, "onConnectionSuspended");
+
     }
 
     @Override
