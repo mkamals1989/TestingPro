@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Concepts.WriteFile">
+        <activity android:name=".Room.RoomMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,6 +28,11 @@
         <activity android:name=".Concepts.LocationFetchUsingGAPI"/>
         <activity android:name=".Concepts.DownloadFileFromURL"/>
         <activity android:name=".Concepts.ReadFile" />
+        <activity android:name=".Concepts.WriteFile" />
+        <!--<activity android:name=".Concepts.ReadFile" />-->
+        <!--<activity android:name=".Concepts.ReadFile" />-->
+        <!--<activity android:name=".Concepts.ReadFile" />-->
+        <!--<activity android:name=".Concepts.ReadFile" />-->
 
         <meta-data
             android:name="com.google.android.gms.version"

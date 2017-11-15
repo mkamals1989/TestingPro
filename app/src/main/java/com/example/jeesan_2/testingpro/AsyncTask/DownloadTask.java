@@ -94,6 +94,7 @@ public class DownloadTask extends AsyncTask<String, Integer, String> {
         mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
                 getClass().getName());
         mWakeLock.acquire();
+        // TODO: 11/16/2017 Temporarily blocking this line due to error - Error:(98, 32) error: incompatible types: Context cannot be converted to DownloadFileFromURL
         ((DownloadFileFromURL) context).mProgressDialog.show();
     }
 
@@ -101,15 +102,17 @@ public class DownloadTask extends AsyncTask<String, Integer, String> {
     protected void onProgressUpdate(Integer... progress) {
         super.onProgressUpdate(progress);
         // if we get here, length is known, now set indeterminate to false
-        ((DownloadFileFromURL) context).mProgressDialog.setIndeterminate(false);
+        // TODO: 11/16/2017 Temporarily blocking this line due to error - Error:(98, 32) error: incompatible types: Context cannot be converted to DownloadFileFromURL
+   /*     ((DownloadFileFromURL) context).mProgressDialog.setIndeterminate(false);
         ((DownloadFileFromURL) context).mProgressDialog.setMax(100);
-        ((DownloadFileFromURL) context).mProgressDialog.setProgress(progress[0]);
+        ((DownloadFileFromURL) context).mProgressDialog.setProgress(progress[0]);*/
     }
 
     @Override
     protected void onPostExecute(String result) {
         mWakeLock.release();
-        ((DownloadFileFromURL) context).mProgressDialog.dismiss();
+        // TODO: 11/16/2017 Temporarily blocking this line due to error - Error:(98, 32) error: incompatible types: Context cannot be converted to DownloadFileFromURL
+//        ((DownloadFileFromURL) context).mProgressDialog.dismiss();
         if (result != null)
             Toast.makeText(context, "Download error: " + result, Toast.LENGTH_LONG).show();
         else
