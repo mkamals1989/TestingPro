@@ -1,5 +1,6 @@
 package com.example.jeesan_2.testingpro.Room;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
@@ -9,6 +10,8 @@ import android.database.Cursor;
 
 import java.util.List;
 
+import static android.arch.persistence.room.OnConflictStrategy.REPLACE;
+
 /**
  * Created by KAMAL on 11/15/2017.
  */
@@ -17,10 +20,13 @@ import java.util.List;
 public interface RepoDao {
 
     @Query("SELECT * FROM repo")
-    List<Repo> getAllRepos();
+    LiveData<List<Repo>> getAllRepos();
 
     @Query("SELECT * FROM repo WHERE id=:id")
-    Repo getRepo(int id);
+    LiveData<Repo> getRepo(int id);
+
+    @Query("SELECT * FROM repo WHERE id=:id")
+    Repo getSingleRepo(int id);
 
     @Query("SELECT * FROM repo")
     Cursor getRepoCursor();
@@ -34,7 +40,7 @@ public interface RepoDao {
     @Insert
     void insert(Repo... repos);
 
-    @Insert
+    @Insert(onConflict = REPLACE)
     void insert(Repo repo);
 
     @Insert

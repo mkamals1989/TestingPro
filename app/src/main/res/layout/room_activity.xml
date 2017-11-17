@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
         android:text="Dummy Text"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        android:layout_gravity="center_horizontal"/>
+        android:textSize="20sp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/addBtn"
-        android:text="Add"
-        android:onClick="addDataMethod"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        android:layout_gravity="center_horizontal"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/getBtn"
-        android:text="Get"
-        android:onClick="getDataMethod"
-        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:layout_gravity="center_horizontal"/>
+        android:onClick="addDataMethod"
+        android:text="Add"
+        android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:onClick="getDataMethod"
+        android:text="Get"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:text="Live Data Text here will load here..."
+        android:textSize="20sp" />
 
 </LinearLayout>
