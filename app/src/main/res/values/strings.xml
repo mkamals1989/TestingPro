@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestingPro</string>
+    <string name="app_market_link">Set App market link here</string>
+    <string name="app_google_play_store_link">Set play store link here</string>
 </resources>
