@@ -29,7 +29,7 @@
         <activity android:name=".Concepts.DownloadFileFromURL"/>
         <activity android:name=".Concepts.ReadFile" />
         <activity android:name=".Concepts.WriteFile" />
-        <!--<activity android:name=".Concepts.ReadFile" />-->
+        <activity android:name=".Concepts.ShapeDrawableActivity" />
         <!--<activity android:name=".Concepts.ReadFile" />-->
         <!--<activity android:name=".Concepts.ReadFile" />-->
         <!--<activity android:name=".Concepts.ReadFile" />-->
