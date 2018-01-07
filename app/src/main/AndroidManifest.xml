@@ -11,27 +11,31 @@
 
 
     <application
+        android:name=".ApplicationTestingPro"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Room.RoomMainActivity">
+        <activity android:name=".Concepts.ServiceSample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Concepts.LocationFetchUsingGAPI"/>
-        <activity android:name=".Concepts.DownloadFileFromURL"/>
+        <activity android:name=".Concepts.LocationFetchUsingGAPI" />
+        <activity android:name=".Concepts.DownloadFileFromURL" />
         <activity android:name=".Concepts.ReadFile" />
         <activity android:name=".Concepts.WriteFile" />
         <activity android:name=".Concepts.ShapeDrawableActivity" />
         <activity android:name=".Concepts.GPSActivity" />
+        <activity android:name=".Room.RoomMainActivity" />
         <!--<activity android:name=".Concepts.ReadFile" />-->
-        <!--<activity android:name=".Concepts.ReadFile" />-->
+
+        <service android:name=".services.MyServiceSample" />
+        <service android:name=".services.MyIntentServiceSample" />
 
         <meta-data
             android:name="com.google.android.gms.version"
