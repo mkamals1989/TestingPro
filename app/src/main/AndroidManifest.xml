@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Concepts.ServiceSample">
+        <activity android:name=".Handler.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +32,7 @@
         <activity android:name=".Concepts.ShapeDrawableActivity" />
         <activity android:name=".Concepts.GPSActivity" />
         <activity android:name=".Room.RoomMainActivity" />
-        <!--<activity android:name=".Concepts.ReadFile" />-->
+        <activity android:name=".Concepts.ServiceSample" />
 
         <service android:name=".services.MyServiceSample" />
         <service android:name=".services.MyIntentServiceSample" />
