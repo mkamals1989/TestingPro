@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Room;
+package com.example.jeesan_2.testingpro.roomdatabase;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;

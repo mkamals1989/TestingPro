@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Concepts;
+package com.example.jeesan_2.testingpro.concepts;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jeesan_2.testingpro.CustomUtility.PermissionHelper;
+import com.example.jeesan_2.testingpro.customutility.PermissionHelper;
 import com.example.jeesan_2.testingpro.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;

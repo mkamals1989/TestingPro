@@ -13,7 +13,7 @@
  * limitations under the License
  */
 
-package com.example.jeesan_2.testingpro.CustomUtility;
+package com.example.jeesan_2.testingpro.customutility;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

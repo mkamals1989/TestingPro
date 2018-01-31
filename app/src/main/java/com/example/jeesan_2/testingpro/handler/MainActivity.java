@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Handler;
+package com.example.jeesan_2.testingpro.handler;
 
 import android.os.Bundle;
 import android.os.Handler;

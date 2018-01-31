@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.CustomUtility;
+package com.example.jeesan_2.testingpro.customutility;
 
 import android.Manifest;
 import android.app.Activity;

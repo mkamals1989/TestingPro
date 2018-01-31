@@ -18,22 +18,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AlarmManager.MainActivity">
+        <activity android:name=".alarmmanager.MainActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Concepts.LocationFetchUsingGAPI" />
-        <activity android:name=".Concepts.DownloadFileFromURL" />
-        <activity android:name=".Concepts.ReadFile" />
-        <activity android:name=".Concepts.WriteFile" />
-        <activity android:name=".Concepts.ShapeDrawableActivity" />
-        <activity android:name=".Concepts.GPSActivity" />
-        <activity android:name=".Room.RoomMainActivity" />
-        <activity android:name=".Concepts.ServiceSample" />
-        <activity android:name=".Handler.MainActivity" />
+        <activity android:name=".concepts.LocationFetchUsingGAPI" />
+        <activity android:name=".concepts.DownloadFileFromURL" />
+        <activity android:name=".concepts.ReadFile" />
+        <activity android:name=".concepts.WriteFile" />
+        <activity android:name=".concepts.ShapeDrawableActivity" />
+        <activity android:name=".concepts.GPSActivity" />
+        <activity android:name=".roomdatabase.RoomMainActivity" />
+        <activity android:name=".concepts.ServiceSample" />
+        <activity android:name=".handler.MainActivity" />
+        <activity android:name=".alarmmanager.MainActivity" />
 
         <service android:name=".services.MyServiceSample" />
         <service android:name=".services.MyIntentServiceSample" />
@@ -43,6 +44,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <receiver android:name=".alarmmanager.AlarmReceiver" />
     </application>
 
 </manifest>

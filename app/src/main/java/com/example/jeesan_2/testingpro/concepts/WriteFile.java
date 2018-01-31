@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Concepts;
+package com.example.jeesan_2.testingpro.concepts;
 
 import android.content.Intent;
 import android.os.Bundle;

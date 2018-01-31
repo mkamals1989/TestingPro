@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Concepts;
+package com.example.jeesan_2.testingpro.concepts;
 
 import android.app.DownloadManager;
 import android.app.ProgressDialog;
@@ -15,8 +15,8 @@ import android.webkit.URLUtil;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jeesan_2.testingpro.AsyncTask.DownloadTask;
-import com.example.jeesan_2.testingpro.CustomUtility.PermissionCheck;
+import com.example.jeesan_2.testingpro.asynctask.DownloadTask;
+import com.example.jeesan_2.testingpro.customutility.PermissionCheck;
 import com.example.jeesan_2.testingpro.R;
 
 import butterknife.BindView;

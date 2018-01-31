@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.AlarmManager;
+package com.example.jeesan_2.testingpro.alarmmanager;
 
 import android.app.AlarmManager;
 import android.content.Context;

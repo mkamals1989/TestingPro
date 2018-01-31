@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.AsyncTask;
+package com.example.jeesan_2.testingpro.asynctask;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -6,7 +6,7 @@ import android.os.Environment;
 import android.os.PowerManager;
 import android.widget.Toast;
 
-import com.example.jeesan_2.testingpro.Concepts.DownloadFileFromURL;
+import com.example.jeesan_2.testingpro.concepts.DownloadFileFromURL;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

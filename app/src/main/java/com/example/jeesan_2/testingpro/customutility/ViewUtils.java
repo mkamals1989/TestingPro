@@ -13,15 +13,13 @@
  * limitations under the License
  */
 
-package com.example.jeesan_2.testingpro.CustomUtility;
+package com.example.jeesan_2.testingpro.customutility;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
-
-import com.example.jeesan_2.testingpro.R;
 
 
 /**

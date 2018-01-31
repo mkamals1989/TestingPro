@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Concepts;
+package com.example.jeesan_2.testingpro.concepts;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -10,10 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.jeesan_2.testingpro.CustomUtility.CommonUtils;
+import com.example.jeesan_2.testingpro.customutility.CommonUtils;
 import com.example.jeesan_2.testingpro.R;
 import com.example.jeesan_2.testingpro.services.MyBoundService;
-import com.example.jeesan_2.testingpro.services.MyIntentServiceSample;
 import com.example.jeesan_2.testingpro.services.MyServiceSample;
 
 /**

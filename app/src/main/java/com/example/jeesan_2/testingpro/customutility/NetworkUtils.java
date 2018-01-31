@@ -13,27 +13,26 @@
  * limitations under the License
  */
 
-package com.example.jeesan_2.testingpro.CustomUtility;
+package com.example.jeesan_2.testingpro.customutility;
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 /**
- * Created by Kamal S on 08/01/17.
+ * Created by Kamal S on 27/01/17.
  */
 
-public final class AppConstants {
+public final class NetworkUtils {
 
-    public static final String STATUS_CODE_SUCCESS = "success";
-    public static final String STATUS_CODE_FAILED = "failed";
-
-    public static final int API_STATUS_CODE_LOCAL_ERROR = 0;
-
-    public static final String DB_NAME = "kamal.db";
-    public static final String PREF_NAME = "kamal_pref";
-
-    public static final long NULL_INDEX = -1L;
-
-    public static final String TIMESTAMP_FORMAT = "yyyyMMdd_HHmmss";
-
-    private AppConstants() {
+    private NetworkUtils() {
         // This utility class is not publicly instantiable
+    }
+
+    public static boolean isNetworkConnected(Context context) {
+        ConnectivityManager cm =
+                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
     }
 }

@@ -1,4 +1,4 @@
-package com.example.jeesan_2.testingpro.Room;
+package com.example.jeesan_2.testingpro.roomdatabase;
 
 /**
  * Created by KAMAL on 11/15/2017.
@@ -8,7 +8,6 @@ import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
-import android.support.annotation.NonNull;
 
 @Database(entities = { Repo.class }, version = 1)
 public abstract class RepoDatabase extends RoomDatabase {

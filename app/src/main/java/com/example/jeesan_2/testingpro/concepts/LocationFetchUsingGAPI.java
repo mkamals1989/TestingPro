@@ -1,7 +1,6 @@
-package com.example.jeesan_2.testingpro.Concepts;
+package com.example.jeesan_2.testingpro.concepts;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -16,7 +15,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jeesan_2.testingpro.CustomUtility.PermissionCheck;
+import com.example.jeesan_2.testingpro.customutility.PermissionCheck;
 import com.example.jeesan_2.testingpro.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -30,9 +29,6 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
-
-import java.security.Permission;
-import java.security.Permissions;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

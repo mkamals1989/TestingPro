@@ -1,13 +1,11 @@
-package com.example.jeesan_2.testingpro.Concepts;
+package com.example.jeesan_2.testingpro.concepts;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.jeesan_2.testingpro.CustomUtility.PermissionCheck;
 import com.example.jeesan_2.testingpro.R;
 
 import butterknife.BindView;
