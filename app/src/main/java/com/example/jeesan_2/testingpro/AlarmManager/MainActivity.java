@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setAlarm(View view) {
-
         calendar.set(Calendar.HOUR_OF_DAY,picker.getHour());
         calendar.set(Calendar.MINUTE,picker.getMinute());
         setAlarmStatusText("Alarm is ON!!! " + picker.getHour() + ":"+picker.getMinute());
