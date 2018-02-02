@@ -35,6 +35,8 @@
         <activity android:name=".concepts.ServiceSample" />
         <activity android:name=".handler.MainActivity" />
         <activity android:name=".alarmmanager.MainActivity" />
+        <activity android:name=".alarmmanager.DummyActivity"
+            android:theme="@style/AlarmDialogTheme"/>
 
         <service android:name=".services.MyServiceSample" />
         <service android:name=".services.MyIntentServiceSample" />
